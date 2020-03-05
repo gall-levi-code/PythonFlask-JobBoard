@@ -3,7 +3,7 @@ from flask import render_template
 
 app = Flask(__name__)
 
-@app.route('/jobs')
+@app.route('/')
 def jobs():
-    render_template('index.html')
+    return render_template('index.html')
 
